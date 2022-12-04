@@ -1,217 +1,263 @@
 :root {
-    --topic-color: #212121;
-    --black-logo: #000000;
-    --text-color: #757575;
-    --button-color: #2196F3;
-    --main-background-color: #F5F5F5;
-    --main-background-color-second: #FFFFFF;
-    --hero-color:#2F303A;
-    --footer-link-second-color: rgba(255, 255, 255, 0.6);
+  --topic-color: #212121;
+  --black-logo: #000000;
+  --text-color: #757575;
+  --button-color: #2196f3;
+  --main-background-color: #f5f5f5;
+  --main-background-color-second: #ffffff;
+  --hero-color: #2f303a;
+  --footer-link-second-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    color: var(--topic-color);
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: var(--topic-color);
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .list {
-    list-style: none
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* POSITION */
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* NAVIGATION */
 header {
-    background-color: var(--main-background-color-second);
+  background-color: var(--main-background-color-second);
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-    color: var(--black-logo);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-    
+  color: var(--black-logo);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-right: 93px;
 }
 .logo-firstpart {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 .main-nav-link {
-    color: var(--topic-color);
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1,14;
-    text-decoration: none;
-    
+  color: var(--topic-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  text-decoration: none;
+
+  margin-right: 50px;
 }
+
 .main-nav-link:hover,
 .main-nav-link:focus {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 .main-nav-link.current {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 .contact-link {
-    color: var(--text-color);
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1,14;
-    text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  text-decoration: none;
+
+  margin-right: 40px;
 }
 .contact-link:hover,
 .contact-link:focus {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 
+.fix-link {
+  margin-right: 0;
+}
 
 /* HERO */
 .hero {
-    background-color: var(--hero-color);
+  background-color: var(--hero-color);
+  height: 600px;
 }
 h1 {
-    color: var(--main-background-color);
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36; 
-    text-transform: uppercase;
-    text-align: center;
+  color: var(--main-background-color);
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .button {
-    background-color: var(--button-color);
-    
+  background-color: var(--button-color);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  border-radius: 4px;
 }
 .button-text {
-    color: var(--main-background-color-second);
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+  color: var(--main-background-color-second);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
 }
-/* Our advantages section *//* What we do section */
+
+.hero > div {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Our advantages section */ /* What we do section */
 
 .topic {
-    color: var(--topic-color);
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  color: var(--topic-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .topic-text {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* Our team section */
 .team {
-    background-color: var(--main-background-color);
+  background-color: var(--main-background-color);
 }
 .team-section {
-    color: var(--topic-color);
-    font-size: 36px;
-    line-height: 1.16;
-    
-
+  color: var(--topic-color);
+  font-size: 36px;
+  line-height: 1.16;
 }
 .team-topic {
-    color: var(--topic-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    
-
+  color: var(--topic-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 .team-topic-text {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
-
-
 
 /* FOOTER */
 footer {
-    background-color: var(--hero-color);
+  background-color: var(--hero-color);
 }
 .footer-logo {
-    color: var(--main-background-color-second);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+  color: var(--main-background-color-second);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 .footer-link {
-    color: var(--main-background-color-second);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    text-decoration: none;
+  color: var(--main-background-color-second);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
 }
 .footer-link-second {
-    color: var(--footer-link-second-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    text-decoration: none;
-    
+  color: var(--footer-link-second-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
 }
 .footer-link-second:hover,
 .footer-link-second:focus {
-    color: var(--button-color);
+  color: var(--button-color);
 }
-
 
 /* PORTFOLIO */
 
 .secondary-button {
-    background-color: var(--main-background-color);
-    cursor: pointer;
+  background-color: var(--main-background-color);
+  cursor: pointer;
 }
 .secondary-button-text {
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .secondary-button:hover,
 .secondary-button:focus {
-    background-color: var(--button-color);
+  background-color: var(--button-color);
 }
 .secondary-button-text:hover,
 .secondary-button-text:focus {
-    color: var(--main-background-color-second);
+  color: var(--main-background-color-second);
 }
 .topic-portfolio {
-    color: var(--topic-color);
-    font-size: 18px;
-    line-height: 2;
-
+  color: var(--topic-color);
+  font-size: 18px;
+  line-height: 2;
 }
 .topic-portfolio-text {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8;
-
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
 }
