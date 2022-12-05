@@ -35,8 +35,13 @@ body {
 h1,
 h2,
 h3,
-p {
-  margin-top: 0;
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -46,12 +51,14 @@ img {
 }
 
 /* POSITION */
-.section {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -61,12 +68,12 @@ header {
   background-color: var(--main-background-color-second);
 }
 
-.header {
+.header-flex {
   display: flex;
   justify-content: space-between;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -133,7 +140,8 @@ header {
 /* HERO */
 .hero {
   background-color: var(--hero-color);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 h1 {
   color: var(--main-background-color);
@@ -166,12 +174,6 @@ h1 {
   line-height: 1.8;
 }
 
-.hero > div {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: inherit;
-}
-
 /* Our advantages section */ /* What we do section */
 
 .advantages-flex {
@@ -191,22 +193,21 @@ h1 {
   color: var(--topic-color);
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
 }
+
+.topic-promo {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .topic-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-}
-
-.promo {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
-
-.topic-promo {
-  text-align: center;
 }
 
 .promo-image {
@@ -227,6 +228,7 @@ h1 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -262,7 +264,7 @@ footer {
   background-color: var(--hero-color);
 }
 
-.footer-box {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -304,10 +306,6 @@ footer {
 
 /* PORTFOLIO */
 
-/* .work-examples {
-  background-color: var(--main-background-color);
-} */
-
 .filter-button-section {
   padding-bottom: 50px;
 }
@@ -348,29 +346,29 @@ footer {
 
 .portfolio-box {
   padding-top: 0;
-  /* max-width: 1200px; */
 }
 
 .portfolio-flex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-list-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
   width: 370px;
   border: 1px solid #eeeeee;
 }
 
-.portfolio-list-item:nth-child(3n) {
+/* .portfolio-list-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .portfolio-list-item:nth-child(n + 7) {
   margin-bottom: 0;
-}
+} */
 
 .topic-portfolio {
   color: var(--topic-color);
